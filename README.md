@@ -1,10 +1,8 @@
 # CMoE
 
-This repository contains the official implementation of our manuscript:
+This repository contains the official implementation of our manuscript entilted "**Taming Cascaded Mixture-of-Experts for Modality-Missing Multi-Modal Salient Object Detection**"
 
-> **Taming Cascaded Mixture-of-Experts for Modality-Missing Multi-Modal Salient Object Detection**
-
-**Note:** To comply with the anonymous review policy, external URLs are omitted. All necessary datasets and pre-trained models are publicly available and can be found via common academic repositories (e.g., GitHub or official model zoos).
+> **Note:** To comply with the anonymous review policy, external URLs are omitted. All necessary datasets and pre-trained models are publicly available and can be found via common academic repositories (e.g., GitHub or official model zoos).
 
 
 
