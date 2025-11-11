@@ -1,13 +1,31 @@
-# CMoE
+# 🌟 CMoE
 
-This repository contains the official implementation of our manuscript entilted "**Taming Cascaded Mixture-of-Experts for Modality-Missing Multi-Modal Salient Object Detection**"
+This repository provides the official implementation of our paper entilted **“Taming Cascaded Mixture-of-Experts for Modality-missing Multi-modal Salient Object Detection”** accepted by AAAI 2026.
 
-> **Note:** To comply with the anonymous review policy, external URLs are omitted. All necessary datasets and pre-trained models are publicly available and can be found via common academic repositories (e.g., GitHub or official model zoos).
+We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively handles the *modality-missing challenge* in multi-modal salient object detection.  
 
+> 📰 **Paper & Resources:**  
+> The camera-ready paper, pre-trained models, and benchmark results will be released soon.
 
+---
 
+## 📖 Citation
+If you find this work useful in your research, please cite:
+```bibtex
+@inproceedings{wang2026cmoe,
+  title     = {Taming Cascaded Mixture-of-Experts for Modality-Missing Multi-Modal Salient Object Detection},
+  author    = {Wang, Kunpeng and Sun, Feifan and Chen, Keke},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2026}
+}
 
-## Ⅰ. Environment Setup
+```
+
+---
+
+## ⚙️ Usage
+
+### Ⅰ. Environment Setup
 
 1. **Install PyTorch and torchvision** (recommended via conda):
 
@@ -39,7 +57,7 @@ This repository contains the official implementation of our manuscript entilted 
    ​
 
 
-## Ⅱ. Training Procedure
+### Ⅱ. Training Procedure
 
 1. **Pre-train Uni-modal Experts**
 
@@ -58,7 +76,7 @@ This repository contains the official implementation of our manuscript entilted 
 
 
 
-## Ⅲ. Testing
+### Ⅲ. Testing
 
 To evaluate the model under both **modality-complete** and **modality-missing** conditions, follow these steps:
 
@@ -80,11 +98,25 @@ To evaluate the model under both **modality-complete** and **modality-missing** 
      ```
      python test_produce_maps.py
      ```
-​
 
-
-## Ⅳ. Evaluation
+     
+### Ⅳ. Evaluation
 
 1. Place the **ground-truth masks** and **predicted saliency maps** into the `./Evaluation/GT/` and `./Evaluation/sal_map/` folders, respectively.
 2. Open `./Evaluation/main.m` using MATLAB.
 3. Specify the evaluation dataset and run the script to compute performance metrics.
+
+
+---
+
+## 🙏 Acknowledgement
+
+The implement of this project is based on the following link.
+
+- [SOD Literature Tracking](https://github.com/jiwei0921/SOD-CNNs-based-code-summary-)
+
+---
+
+## 📬 Contact
+
+If you have any questions, please contact us (kp.wang@foxmail.com).
