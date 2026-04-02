@@ -12,11 +12,14 @@ We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively han
 ## 📖 Citation
 If you find this work useful in your research, please cite:
 ```bibtex
-@inproceedings{wang2026cmoe,
-  title     = {Taming Cascaded Mixture-of-Experts for Modality-Missing Multi-Modal Salient Object Detection},
-  author    = {Wang, Kunpeng and Sun, Feifan and Chen, Keke},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  year      = {2026}
+@inproceedings{wang2026taming,
+  title={Taming Cascaded Mixture-of-Experts for Modality-missing Multi-modal Salient Object Detection},
+  author={Wang, Kunpeng and Sun, Feifan and Chen, Keke},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={12},
+  pages={9939--9947},
+  year={2026}
 }
 
 ```
