@@ -15,10 +15,11 @@ We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively han
 
 <p align="center">
   <a href="./assets/main.pdf">
-    <img src="./assets/main.png" alt="CMoE Poster" width="100%">
+    <img src="./assets/poster.png" alt="CMoE Poster" width="100%">
   </a>
 </p>
 <p align="center">
+  Click the image to download the high-resolution PDF version.
 </p>
 
 ---
