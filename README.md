@@ -1,11 +1,13 @@
+---
+
 # 🌟 CMoE
 
-This repository provides the official implementation of our paper entilted **“Taming Cascaded Mixture-of-Experts for Modality-missing Multi-modal Salient Object Detection”** accepted by AAAI 2026.
+This repository provides the official implementation of our paper entitled **“Taming Cascaded Mixture-of-Experts for Modality-missing Multi-modal Salient Object Detection”** accepted by AAAI 2026.
 
 We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively handles the *modality-missing challenge* in multi-modal salient object detection.  
 
-> 📰 **Paper & Resources:**  
-> The camera-ready paper, pre-trained models, and benchmark results will be released soon.
+> 📰 **News & Resources:**  
+> - **[New]** Pre-trained models and predicted saliency maps are now available!
 
 ---
 
@@ -13,7 +15,7 @@ We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively han
 If you find this work useful in your research, please cite:
 ```bibtex
 @inproceedings{wang2026taming,
-  title={Taming Cascaded Mixture-of-Experts for Modality-missing Multi-modal Salient Object Detection},
+  title={Taming cascaded mixture-of-experts for modality-missing multi-modal salient object detection},
   author={Wang, Kunpeng and Sun, Feifan and Chen, Keke},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   volume={40},
@@ -21,8 +23,16 @@ If you find this work useful in your research, please cite:
   pages={9939--9947},
   year={2026}
 }
-
 ```
+
+---
+
+## 📦 Pre-trained Models & Saliency Maps
+
+We provide the pre-trained model weights and the predicted saliency maps (evaluated under both modality-complete and modality-missing settings) to facilitate reproducible research.
+
+- **Baidu Pan (百度网盘):** [Download Here](https://pan.baidu.com/s/1EwJ2ps4Lg_qmxrPGNbVRKw?pwd=CMoE) (Access Code / 提取码: `CMoE`)
+- **Google Drive:** *Uploading... Link will be available soon.* ⏳
 
 ---
 
@@ -32,13 +42,13 @@ If you find this work useful in your research, please cite:
 
 1. **Install PyTorch and torchvision** (recommended via conda):
 
-   ```
+   ```bash
    conda install pytorch==1.12.0 torchvision==0.13.0 -c pytorch
    ```
 
 2. **Install additional dependencies**:
 
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
@@ -59,12 +69,11 @@ If you find this work useful in your research, please cite:
 
    ​
 
-
 ### Ⅱ. Training Procedure
 
 1. **Pre-train Uni-modal Experts**
 
-     ```
+     ```bash
      python -m torch.distributed.launch --nproc_per_node=2 --master_port=2024 ./CMoE-main/train_parallel_rgb.py
      python -m torch.distributed.launch --nproc_per_node=2 --master_port=2026 ./CMoE-main/train_parallel_t.py
      ```
@@ -73,7 +82,7 @@ If you find this work useful in your research, please cite:
 2. **Fine-tune Multi-modal Model**
 
      Before starting, set the paths for the pre-trained uni-modal weights in `./CMoE-main/options.py`. Then, run:
-     ```
+     ```bash
      python -m torch.distributed.launch --nproc_per_node=2 --master_port=2024 ./CMoE-main/train_parallel_multi.py
      ```
 
@@ -87,7 +96,7 @@ To evaluate the model under both **modality-complete** and **modality-missing** 
 
      For each test dataset, run the following script to generate zero-value (black) images as the missing modality input:
 
-     ```
+     ```bash
      python ./CMoE-main/black.py
      ```
 
@@ -98,7 +107,7 @@ To evaluate the model under both **modality-complete** and **modality-missing** 
 3. **Run Testing**:
      
      The model will automatically predict saliency results under **modality-complete** and **modality-missing** settings:
-     ```
+     ```bash
      python test_produce_maps.py
      ```
 
@@ -114,7 +123,7 @@ To evaluate the model under both **modality-complete** and **modality-missing** 
 
 ## 🙏 Acknowledgement
 
-The implement of this project is based on the following link.
+The implementation of this project is based on the following link:
 
 - [SOD Literature Tracking](https://github.com/jiwei0921/SOD-CNNs-based-code-summary-)
 
