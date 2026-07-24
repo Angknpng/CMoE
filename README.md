@@ -11,7 +11,7 @@ We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively han
 
 ---
 
-## 🖼️ Poster
+## 🧩 Poster
 
 <p align="center">
   <a href="./assets/main.pdf">
