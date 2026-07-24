@@ -13,14 +13,20 @@ We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively han
 
 ## 🧩 Poster
 
+<details>
+<summary><b>🖱️ Click to expand and view the AAAI 2026 Poster</b></summary>
+
+<br>
 <p align="center">
   <a href="./assets/main.pdf">
-    <img src="./assets/poster.png" alt="CMoE Poster" width="100%">
+    <img src="./assets/main.png" alt="CMoE Poster" width="70%">
   </a>
 </p>
 <p align="center">
-  Click the image to download the high-resolution PDF version.
+  <em>Click the image to download the high-resolution PDF version.</em>
 </p>
+
+</details>
 
 ---
 
