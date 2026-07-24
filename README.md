@@ -2,7 +2,7 @@
 
 # 🌟 CMoE
 
-This repository provides the official implementation of our paper entitled **“Taming Cascaded Mixture-of-Experts for Modality-missing Multi-modal Salient Object Detection”** accepted by AAAI 2026.
+This repository provides the official implementation of our paper entitled **“[Taming Cascaded Mixture-of-Experts for Modality-missing Multi-modal Salient Object Detection](https://ojs.aaai.org/index.php/AAAI/article/view/37959)”** accepted by AAAI 2026.
 
 We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively handles the *modality-missing challenge* in multi-modal salient object detection.  
 
@@ -19,7 +19,6 @@ We propose a *Cascaded Mixture-of-Experts (CMoE)* framework that effectively han
   </a>
 </p>
 <p align="center">
-  <em>Click the image to download the high-resolution PDF version.</em>
 </p>
 
 ---
