@@ -40,7 +40,7 @@ If you find this work useful in your research, please cite:
 We provide the pre-trained model weights and the predicted saliency maps (evaluated under both modality-complete and modality-missing settings) to facilitate reproducible research.
 
 - **Baidu Pan (百度网盘):** [Download Here](https://pan.baidu.com/s/1EwJ2ps4Lg_qmxrPGNbVRKw?pwd=CMoE) (Access Code / 提取码: `CMoE`)
-- **Google Drive:** *Uploading... Link will be available soon.* ⏳
+- **Google Drive:** [Download Here](https://drive.google.com/drive/folders/17jEMDurFX9dMsxxQ_d9zFz3M7N1pWjHy?usp=sharing)
 
 ---
 
